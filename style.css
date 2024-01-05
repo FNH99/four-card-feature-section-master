@@ -77,9 +77,10 @@ header {
 }
 
 .card{
+    --br: .325rem;
     padding: 2rem;
-    border-radius: 0.5rem;
-    border-top: 8px solid;
+    border-radius: var(--br);
+    border-top: var(--br) solid;
     box-shadow: 0 15px 20px -7.5px rgb(0 50 100 / 0.15);
 }
 
