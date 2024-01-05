@@ -2,7 +2,6 @@
 *::before,
 *::after {
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
 :root {
@@ -15,6 +14,8 @@
     --clr-neutral-400: hsl(229, 6%, 66%);
     --clr-neutral-100: hsl(0, 0%, 98%);
 
+    --ff-sans: 'Poppins', sans-serif;
+
     --fw-light: 200;
     --fw-normal: 400;
     --fw-bold: 600;
@@ -23,6 +24,65 @@
     --fs-500: 1.25rem;
     --fs-600: 1.625rem;
     --fs-900: 2.5rem;
-    
 }
 
+html {
+    font-family: var(--ff-sans);
+    font-weight: var(--fw-normal);
+    line-height: 1.7;
+    color: var(--clr-neutral-400);
+}
+
+body {
+    margin: 0;
+    padding-block-end: 5rem;
+}
+
+h1, h2, h3 {
+    color: var(--clr-neutral-900);
+    line-height: 1.1;
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin-inline: auto; /*centering*/
+}
+
+.wrapper--narrow {
+    max-width: 550px;
+}
+
+header {
+    text-align: center;
+    margin-block: 6rem;
+}
+
+
+.layout-grid {
+    --gap: 2rem;
+    display: flex;
+    gap: var(--gap);
+}
+
+/*set every children of class*/
+.layout-grid > * {
+    flex: 1;
+}
+/*===========================*/
+
+.col {
+    display: grid;
+    gap: var(--gap);
+    align-content: center;
+}
+
+.card{
+    padding: 2rem;
+    border-radius: 0.5rem;
+    border-top: 8px solid;
+    box-shadow: 0 15px 20px -7.5px rgb(0 50 100 / 0.15);
+}
+
+.card:nth-child(1) {
+    border-color: var(--clr-cyan);
+}
