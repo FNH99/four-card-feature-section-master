@@ -83,6 +83,15 @@ header {
     box-shadow: 0 15px 20px -7.5px rgb(0 50 100 / 0.15);
 }
 
-.card:nth-child(1) {
+.border-cyan {
     border-color: var(--clr-cyan);
+}
+.border-red {
+    border-color: var(--clr-red);
+}
+.border-orange {
+    border-color: var(--clr-orange);
+}
+.border-blue {
+    border-color: var(--clr-blue);
 }
