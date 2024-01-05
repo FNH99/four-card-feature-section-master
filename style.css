@@ -40,11 +40,12 @@ body {
 
 h1, h2, h3 {
     color: var(--clr-neutral-900);
-    line-height: 1.1;
+    line-height: 1.2;
 }
 
 .wrapper {
-    max-width: 1100px;
+    padding-inline: 2rem;
+    max-width: 1200px;
     margin-inline: auto; /*centering*/
 }
 
@@ -57,11 +58,30 @@ header {
     margin-block: 6rem;
 }
 
+h1 {
+    font-weight: var(--fw-light);
+    font-size: var(--fs-900);
+}
+
+h1 span {
+    font-weight: var(--fw-bold);
+}
+
+header > p {
+    font-size: var(--fs-500);
+}
+
 
 .layout-grid {
     --gap: 2rem;
-    display: flex;
+    display: grid;
     gap: var(--gap);
+}
+
+@media (min-width: 800px) {
+    .layout-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 /*set every children of class*/
@@ -84,6 +104,17 @@ header {
     box-shadow: 0 15px 20px -7.5px rgb(0 50 100 / 0.15);
 }
 
+.card__title {
+    font-size: var(--fs-600);
+    margin: 0;
+}
+
+.card__img {
+    display: block;
+    margin-left: auto;
+    margin-top: 2rem;
+}
+
 .border-cyan {
     border-color: var(--clr-cyan);
 }
@@ -96,3 +127,4 @@ header {
 .border-blue {
     border-color: var(--clr-blue);
 }
+
