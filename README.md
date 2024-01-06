@@ -21,13 +21,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](https://github.com/FNH99/3-column-preview-card-component-main/blob/main/images/screenshot-desktop.png)
+![](https://github.com/FNH99/four-card-feature-section-master/blob/main/images/screenshot-desktop.png)
 
-![](https://github.com/FNH99/3-column-preview-card-component-main/blob/main/images/screenshot-mobile.png)
+![](https://github.com/FNH99/four-card-feature-section-master/blob/main/images/screenshot-mobile.png)
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Four card feature section](https://four-card-feature-section-master-ten-neon.vercel.app)
 
 ## Author
 
