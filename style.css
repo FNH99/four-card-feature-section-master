@@ -33,6 +33,10 @@ html {
     color: var(--clr-neutral-400);
 }
 
+footer {
+    margin-top: 6rem;
+}
+
 body {
     margin: 0;
     padding-block-end: 5rem;
@@ -45,12 +49,8 @@ h1, h2, h3 {
 
 .wrapper {
     padding-inline: 2rem;
-    max-width: 1200px;
+    max-width: 475px;
     margin-inline: auto; /*centering*/
-}
-
-.wrapper--narrow {
-    max-width: 550px;
 }
 
 header {
@@ -60,7 +60,7 @@ header {
 
 h1 {
     font-weight: var(--fw-light);
-    font-size: var(--fs-900);
+    font-size: 2rem;
 }
 
 h1 span {
@@ -78,7 +78,16 @@ header > p {
     gap: var(--gap);
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
+    html {
+        font-size: var(--fs-400);
+    }
+    .wrapper {
+        max-width: 1200px;
+    }
+    .wrapper--narrow {
+        max-width: 550px;
+    }
     .layout-grid {
         grid-template-columns: 1fr 1fr 1fr;
     }
